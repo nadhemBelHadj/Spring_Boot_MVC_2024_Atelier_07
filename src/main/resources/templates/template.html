@@ -28,7 +28,7 @@
         Produits
       </a>
       <div class="dropdown-menu">
-        <a sec:authorize="hasAnyRole('ADMIN', 'AGENT')"  class="dropdown-item"  th:href="@{showCreate}">Ajouter</a>
+        <a sec:authorize="hasAnyAuthority('ADMIN','AGENT')" class="dropdown-item"  th:href="@{showCreate}">Ajouter</a>
         <a class="dropdown-item"  th:href="@{ListeProduits}">Lister</a>
       </div>
     </li>
